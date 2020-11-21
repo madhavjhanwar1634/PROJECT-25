@@ -7,15 +7,15 @@ var option={
     density:1.2
 }
 this.body=Bodies.circle(x,y,r,option)
-this.image=loadImage("paper.png")
 this.r=r
+this.image=loadImage("paper.png")
 World.add(world,this.body)
 
     }
     display(){
-    
-        imageMode(CENTER)
-        image(this.image,this.body.position.x,this.body.position.y,this.r,this.r)
+        fill("blue")
+    imageMode(CENTER)
+    image(this.image,this.body.position.x,this.body.position.y,this.r,this.r)
 
     }
 }
